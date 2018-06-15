@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net461</TargetFramework>
+    <RuntimeFrameworkVersion>2.0</RuntimeFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+</PropertyGroup>
+<ItemGroup>
+  <Content Include="appsettings.json">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.20.0"/>
+    <PackageReference Include="Selenium.Support" Version="3.4.0"/>
+    <PackageReference Include="Selenium.WebDriver" Version="3.4.0"/>
+    <PackageReference Include="SimpleInjector" Version="4.3.0"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.0"/>
+  </ItemGroup>
+</Project>
